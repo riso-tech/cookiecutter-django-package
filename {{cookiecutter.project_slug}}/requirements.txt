@@ -1,4 +1,5 @@
--e ../../{{ cookiecutter.app_slug }}
-
+Werkzeug[watchdog]==2.2.2 # https://github.com/pallets/werkzeug
 django-debug-toolbar==3.8.1  # https://github.com/jazzband/django-debug-toolbar
 django-extensions==3.2.1  # https://github.com/django-extensions/django-extensions
+
+-e ../{{ cookiecutter.project_slug }}
