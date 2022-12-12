@@ -1,0 +1,3 @@
+include LICENSE
+include README.rst
+recursive-include {{cookiecutter.app_slug}} *.html *.png *.gif *js *.css *jpg *jpeg *svg *py
