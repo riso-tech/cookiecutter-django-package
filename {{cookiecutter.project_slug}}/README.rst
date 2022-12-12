@@ -56,3 +56,17 @@ Docs & Source
 
 * Source: {{ cookiecutter.repo_url }}
 * PyPI: https://pypi.org/project/{{ cookiecutter.project_slug }}/
+
+
+Publishing to PyPI
+------------------
+
+The following code builds the packages and invokes Twine:
+
+
+.. code-block:: bash
+
+    $ python -m pip install -U wheel twine setuptools
+    $ python setup.py sdist
+    $ python setup.py bdist_wheel
+    $ twine upload dist/*
